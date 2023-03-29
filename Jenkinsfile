@@ -11,16 +11,16 @@ pipeline {
   }
 
   stages {
-		stage("Git") {
-			steps {
+    stage("Git") {
+      steps {
         git(
           branch: "${params.branch}",
           credentialsId: "${CREDENTIAL}",
           url: "${GITHUB_URL}"
         )
-			}
+      }
 
-			post {
+      post {
         success {
           sh "echo \"Successfully Cloned Repository\""
         }
@@ -28,7 +28,7 @@ pipeline {
           sh "echo \"Fail Cloned Repository\""
         }
       }
-		}
+    }
 
     stage("Build") {
       steps {
