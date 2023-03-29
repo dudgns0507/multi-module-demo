@@ -1,0 +1,10 @@
+rootProject.name = 'multi-module-demo'
+
+include 'data-smt'
+include 'data-insurance-kb'
+include 'data-client-baemin'
+include 'external-api'
+include 'core-service'
+include 'core-util'
+include 'boot-batch'
+
