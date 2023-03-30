@@ -2,15 +2,16 @@ package me.cropo.data.smt.model.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
+import jakarta.persistence.GeneratedValue
 import jakarta.persistence.Id
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import java.util.*
 
 @Entity
 data class UserEntity(
     @Id
-    val id: UUID = UUID.randomUUID(),
+    @GeneratedValue
+    val id: Long = 0,
     @Column
     val name: String,
     @Column
