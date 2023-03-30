@@ -40,7 +40,7 @@ Message : 타입 - 요약
 Description : 본문
 ```
 ### 타입
-* feat - 새로운 기능 추가
+* feature - 새로운 기능 추가
 * fix - 버그 수정
 * docs - 문서 수정
 * style - 코드 포맷팅
