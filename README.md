@@ -8,9 +8,11 @@
 * **external-api**
   * 외부 서버와의 통신을 위한 모듈. (ex. 보험사 VPN)
 * **boot** (네이밍 : boot-batch-$, boot-admin-$)
-    * 기타 모듈 (ex. batch, admin)
+  * 기타 모듈 (ex. batch, admin)
 * **front** (네이밍 : front-$)
-    * 프론트 페이지 모듈
+  * 프론트 페이지 모듈
+
+![module-structure.png](module-structure.png)
 
 ## Team Config
 * Convention (smallticket-style.xml)
@@ -23,6 +25,13 @@
 ### Ktlint Git Pre-commit 등록
 ```shell
 ./gradlew addKtlintCheckGitPreCommitHook
+```
+
+### Intellij Settings 설정
+```
+Intellij -> File -> Manage IDE Settings -> Import Settings...
+
+./team-config/settings/intellij-all-settings.zip 선택
 ```
 
 ### Intellij Code Style 설정
